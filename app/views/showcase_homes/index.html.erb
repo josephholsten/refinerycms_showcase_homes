@@ -2,6 +2,7 @@
   <ul id="showcase_homes">
     <% @showcase_homes.each do |showcase_home| %>
       <li>
+        <%= link_to image_tag(showcase_home.images.first.thumbnail("200x200#c").url), showcase_home_path(showcase_home) %>
         <%= link_to showcase_home.address, showcase_home_path(showcase_home) %>
       </li>
     <% end %>

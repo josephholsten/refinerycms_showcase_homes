@@ -10,6 +10,16 @@
     </p>
   </section>
   <section>
+    <h1>Images</h1>
+    <p>
+      <% @showcase_home.images.each do |i| %>
+        <li>
+          <%= link_to image_tag(i.thumbnail("200x200#c").url), i.thumbnail("900x600").url %>
+        </li>
+      <% end %>
+    </p>
+  </section>
+  <section>
     <h1>Custom Teaser</h1>
     <p>
       <%=raw @showcase_home.custom_teaser %>
