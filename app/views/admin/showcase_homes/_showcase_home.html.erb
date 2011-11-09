@@ -1,0 +1,18 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(showcase_home) -%>">
+  <span class='title'>
+    <%= showcase_home.address %>
+    <span class="preview">&nbsp;</span>
+  </span>
+  <span class='actions'>
+    <%= link_to refinery_icon_tag("application_go.png"), showcase_home_path(showcase_home),
+        :title => t('.view_live_html'),
+        :target => "_blank" %>
+    <%= link_to refinery_icon_tag("application_edit.png"), edit_admin_showcase_home_path(showcase_home),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), admin_showcase_home_path(showcase_home),
+        :class => "cancel confirm-delete",
+        :title => t('.delete'),
+        :confirm => t('message', :scope => 'shared.admin.delete', :title => showcase_home.address),
+        :method => :delete %>
+  </span>
+</li>

@@ -1,0 +1,11 @@
+<% content_for :body_content_left do %>
+  <ul id="showcase_homes">
+    <% @showcase_homes.each do |showcase_home| %>
+      <li>
+        <%= link_to showcase_home.address, showcase_home_path(showcase_home) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>

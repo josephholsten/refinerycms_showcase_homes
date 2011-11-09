@@ -1,0 +1,21 @@
+nl:
+  plugins:
+    showcase_homes:
+      title: Showcase Homes
+  admin:
+    showcase_homes:
+      actions:
+        create_new: Maak een nieuwe Showcase Home
+        reorder: Wijzig de volgorde van de Showcase Homes
+        reorder_done: Klaar met het wijzingen van de volgorde van de Showcase Homes
+      records:
+        title: Showcase Homes
+        sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+        no_items_yet: Er zijn nog geen Showcase Homes. Druk op 'Maak een nieuwe Showcase Home' om de eerste aan te maken.
+      showcase_home:
+        view_live_html: Bekijk deze showcase home op de website <br/><em>(opent een nieuw venster)</em>
+        edit: Bewerk deze showcase home
+        delete: Verwijder deze showcase home voor eeuwig
+  showcase_homes:
+    show:
+      other: Andere Showcase Homes

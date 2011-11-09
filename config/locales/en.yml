@@ -1,0 +1,25 @@
+en:
+  shared:
+    admin:
+      image_picker:
+        image: image
+  plugins:
+    showcase_homes:
+      title: Showcase Homes
+  admin:
+    showcase_homes:
+      actions:
+        create_new: Add New Showcase Home
+        reorder: Reorder Showcase Homes
+        reorder_done: Done Reordering Showcase Homes
+      records:
+        title: Showcase Homes
+        sorry_no_results: Sorry! There are no results found.
+        no_items_yet: There are no Showcase Homes yet. Click "Add New Showcase Home" to add your first showcase home.
+      showcase_home:
+        view_live_html: View this showcase home live <br/><em>(opens in a new window)</em>
+        edit: Edit this showcase home
+        delete: Remove this showcase home forever
+  showcase_homes:
+    show:
+      other: Other Showcase Homes

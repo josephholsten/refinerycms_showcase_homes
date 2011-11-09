@@ -1,0 +1,25 @@
+lolcat:
+  shared:
+    admin:
+      image_picker:
+        image: IMAGE
+  plugins:
+    showcase_homes:
+      title: Showcase Homes
+  admin:
+    showcase_homes:
+      actions:
+        create_new: CREATE NEW Showcase Home
+        reorder: REORDR Showcase Homes
+        reorder_done: DUN REORDERIN Showcase Homes
+      records:
+        title: Showcase Homes
+        sorry_no_results: SRY! THAR R NO RESULTS FINDZ.
+        no_items_yet: THAR R NO Showcase Homes YET. CLICK "CREATE NEW Showcase Home" 2 ADD UR FURST showcase home.
+      showcase_home:
+        view_live_html: VIEW DIS showcase home LIV <BR/><EM>(OPENS IN NEW WINDOW)</EM>
+        edit: EDIT DIS showcase home
+        delete: REMOOV DIS showcase home FOREVR
+  showcase_homes:
+    show:
+      other: OTHR Showcase Homes

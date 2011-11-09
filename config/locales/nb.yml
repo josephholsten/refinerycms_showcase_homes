@@ -1,0 +1,21 @@
+nb:
+  plugins:
+    showcase_homes:
+      title: Showcase Homes
+  admin:
+    showcase_homes:
+      actions:
+        create_new: Lag en ny Showcase Home
+        reorder: Endre rekkefølgen på Showcase Homes
+        reorder_done: Ferdig å endre rekkefølgen Showcase Homes
+      records:
+        title: Showcase Homes
+        sorry_no_results: Beklager! Vi fant ikke noen resultater.
+        no_items_yet: Det er ingen Showcase Homes enda. Klikk på "Lag en ny Showcase Home" for å legge til din første showcase home.
+      showcase_home:
+        view_live_html: Vis hvordan denne showcase home ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+        edit: Rediger denne showcase home
+        delete: Fjern denne showcase home permanent
+  showcase_homes:
+    show:
+      other: Andre Showcase Homes

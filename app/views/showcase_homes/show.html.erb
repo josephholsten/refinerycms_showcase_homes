@@ -1,0 +1,57 @@
+<% content_for :body_content_title do %>
+  <%= @showcase_home.address %>
+<% end %>
+
+<% content_for :body_content_left do %>
+  <section>
+    <h1>Address</h1>
+    <p>
+      <%=raw @showcase_home.address %>
+    </p>
+  </section>
+  <section>
+    <h1>Custom Teaser</h1>
+    <p>
+      <%=raw @showcase_home.custom_teaser %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @showcase_home.description %>
+    </p>
+  </section>
+  <section>
+    <h1>Price</h1>
+    <p>
+      <%=raw @showcase_home.price %>
+    </p>
+  </section>
+  <section>
+    <h1>Sale Date</h1>
+    <p>
+      <%=raw @showcase_home.sale_date %>
+    </p>
+  </section>
+  <section>
+    <h1>Specifics</h1>
+    <p>
+      <%=raw @showcase_home.specifics %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :body_content_right do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="showcase_homes">
+      <% @showcase_homes.each do |showcase_home| %>
+        <li>
+          <%= link_to showcase_home.address, showcase_home_path(showcase_home) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render :partial => "/shared/content_page" %>
