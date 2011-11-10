@@ -2,7 +2,7 @@
   <%= @showcase_home.address %>
 <% end %>
 
-<% content_for :body_content_left do %>
+<% content_for :main_content do %>
   <section>
     <h1>Address</h1>
     <p>
@@ -51,7 +51,7 @@
   </section>
 <% end %>
 
-<% content_for :body_content_right do %>
+<% content_for :excerpt_content do %>
   <aside>
     <h2><%= t('.other') %></h2>
     <ul id="showcase_homes">

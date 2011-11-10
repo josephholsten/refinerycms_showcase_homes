@@ -12,14 +12,11 @@
   <div class='field'>
     <div id='page-tabs' class='clearfix ui-tabs ui-widget ui-widget-content ui-corner-all'>
       <ul id='page_parts'>
-        <% [:custom_teaser, :description, :specifics].each_with_index do |part, part_index| %>
+        <% [:custom_teaser, :description, :specifics, :images].each_with_index do |part, part_index| %>
           <li class='ui-state-default<%= ' ui-state-active' if part_index == 0 %>'>
             <%= link_to part.to_s.titleize, "##{part}" %>
           </li>
         <% end %>
-	      <li class='ui-state-default' id="custom_images_tab">
-	        <%= link_to "Images", "#custom_tab_0" %>
-	      </li>
       </ul>
 
       <div id='page_part_editors'>
@@ -28,9 +25,9 @@
             <%= f.text_area part, :rows => 20, :class => 'wymeditor widest' -%>
           </div>
         <% end %>
-					<div class='page_part' id='custom_tab_0'>
-            <%= render :partial => 'admin/showcase_homes/tabs/images', :locals => {:f => f} %>
-          </div>
+        <div class='page_part' id='images'>
+          <%= render :partial => '/admin/showcase_homes/tabs/images', :locals => {:f => f} %>
+        </div>
       </div>
     </div>
   </div>
