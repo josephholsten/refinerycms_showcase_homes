@@ -7,7 +7,7 @@ class ShowcaseHome < ActiveRecord::Base
 
   validates :address, :presence => true, :uniqueness => true
   accepts_nested_attributes_for :images, :allow_destroy => false
-  attr_accessible :address, :custom_teaser, :description, :specifics, :price, :sale_date, :images_attributes
+  attr_accessible :address, :custom_teaser, :description, :specifics, :price, :sale_date, :images_attributes, :sold
 
   def images_attributes=(data)
     ImageShowcaseHome.delete_all(:showcase_home_id => self.id)
